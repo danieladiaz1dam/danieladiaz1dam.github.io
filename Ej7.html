@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+	<meta charset="utf-8">
+	<meta author="Daniela">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style type="text/css">
+		body {
+			font-size: 1.5rem;
+		}
+		label {
+			margin-bottom: 10px;
+			display: inline-block;
+		}
+	</style>
+
+	<title>Ejercicio 1 - Daniela</title>
+</head>
+<body>
+	<form action="https://www.w3schools.com/action_page.php" method="post">
+		<fieldset>
+			<legend>Receta</legend>
+			<label>Nombre: </label> <input type="text" name="nombre"> <br>
+			<label>Correo del autor: </label> <input type="email" name="correo"> <br>
+			<label>Momento para comer: </label> 
+			<input type="checkbox" name="momento" value="desayuno">desayuno
+			<input type="checkbox" name="momento" value="almuerzo">almuerzo
+			<input type="checkbox" name="momento" value="merienda">merienda
+			<input type="checkbox" name="momento" value="cena">cena
+			<input type="checkbox" name="momento" value="postre">postre
+			<br>
+			<label>Ingredientes: </label>
+			<select name="ingredientes" multiple style="width: 150px; height: 150px;">
+				<optgroup label="Carne">
+					<option>Opt1</option>
+					<option>Opt2</option>
+					<option>Opt3</option>
+				</optgroup>
+				<optgroup label="Pescado">
+					<option>Opt4</option>
+					<option>Opt5</option>
+					<option>Opt6</option>
+				</optgroup>
+				<optgroup label="Fruta">
+					<option>Opt7</option>
+					<option>Opt8</option>
+					<option>Opt9</option>
+				</optgroup>
+				<optgroup label="Verdura">
+					<option>Opt10</option>
+					<option>Opt11</option>
+					<option>Opt12</option>
+				</optgroup>
+			</select>
+			<br>
+			<label>Tiempo de preparacion: </label>
+			<br>
+			<input type="submit" name="enviar" value="Enviar">
+		</fieldset>
+	</form>
+</body>
+</html>
