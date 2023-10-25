@@ -8,56 +8,121 @@
 	<style type="text/css">
 		body {
 			font-size: 1.5rem;
+			font-family: Verdana, sans-serif;
 		}
 		label {
-			margin-bottom: 10px;
 			display: inline-block;
+			line-height: 1rem;
+		}
+		img {
+			width: 200px;
+			height: 200px;
+			margin-top: 10px;
+		}
+		fieldset {
+			border-radius: 10px;
+		}
+		legend {
+			font-weight: bold;
+		}
+		input[type="submit"] {
+			font-size: 1rem;
+		}
+		div.field {
+			margin-bottom: 15px;
 		}
 	</style>
 
-	<title>Ejercicio 1 - Daniela</title>
+	<title>Ejercicio 7 - Daniela</title>
 </head>
 <body>
-	<form action="https://www.w3schools.com/action_page.php" method="post">
+	<form action="https://lm.ciclo.iesnervion.es/" method="post">
 		<fieldset>
 			<legend>Receta</legend>
-			<label>Nombre: </label> <input type="text" name="nombre"> <br>
-			<label>Correo del autor: </label> <input type="email" name="correo"> <br>
-			<label>Momento para comer: </label> 
-			<input type="checkbox" name="momento" value="desayuno">desayuno
-			<input type="checkbox" name="momento" value="almuerzo">almuerzo
-			<input type="checkbox" name="momento" value="merienda">merienda
-			<input type="checkbox" name="momento" value="cena">cena
-			<input type="checkbox" name="momento" value="postre">postre
-			<br>
-			<label>Ingredientes: </label>
-			<select name="ingredientes" multiple style="width: 150px; height: 150px;">
-				<optgroup label="Carne">
-					<option>Opt1</option>
-					<option>Opt2</option>
-					<option>Opt3</option>
-				</optgroup>
-				<optgroup label="Pescado">
-					<option>Opt4</option>
-					<option>Opt5</option>
-					<option>Opt6</option>
-				</optgroup>
-				<optgroup label="Fruta">
-					<option>Opt7</option>
-					<option>Opt8</option>
-					<option>Opt9</option>
-				</optgroup>
-				<optgroup label="Verdura">
-					<option>Opt10</option>
-					<option>Opt11</option>
-					<option>Opt12</option>
-				</optgroup>
-			</select>
-			<br>
-			<label>Tiempo de preparacion: </label>
-			<br>
+			<div class="field">				
+				<label>Nombre*</label> <br> <input required type="text" name="nombre"> <br>
+			</div>
+			
+			<div class="field">
+				<label>Correo del autor*</label> <br> <input required type="email" name="correo"> <br>
+			</div>
+
+			<div class="field">
+				<label>Momento para comer*</label> <br>
+				<input type="checkbox" name="momento[]" value="desayuno">desayuno
+				<input type="checkbox" name="momento[]" value="almuerzo">almuerzo
+				<input type="checkbox" name="momento[]" value="merienda">merienda
+				<input type="checkbox" name="momento[]" value="cena">cena
+				<input type="checkbox" name="momento[]" value="postre">postre
+			</div>
+
+			<div class="field">
+				<label>Ingredientes*</label> <br>
+				<select required name="ingredientes[]" multiple style="width: 150px; height: 150px;">
+					<optgroup label="Carne">
+						<option>Opt1</option>
+						<option>Opt2</option>
+						<option>Opt3</option>
+					</optgroup>
+					<optgroup label="Pescado">
+						<option>Opt4</option>
+						<option>Opt5</option>
+						<option>Opt6</option>
+					</optgroup>
+					<optgroup label="Fruta">
+						<option>Opt7</option>
+						<option>Opt8</option>
+						<option>Opt9</option>
+					</optgroup>
+					<optgroup label="Verdura">
+						<option>Opt10</option>
+						<option>Opt11</option>
+						<option>Opt12</option>
+					</optgroup>
+				</select>
+			</div>
+
+			<div class="field">
+				<label>Tiempo de preparacion*</label> <br>
+				<label>Horas: </label>
+				<input required type="radio" name="horas" value="0"> 0h
+				<input required type="radio" name="horas" value="1"> 1h
+				<input required type="radio" name="horas" value="2"> 2h
+				<br>
+				<label>Minutos: </label>
+				<input required type="radio" name="minutos" value="0"> 0min
+				<input required type="radio" name="minutos" value="15"> 15min
+				<input required type="radio" name="minutos" value="30"> 30min
+				<input required type="radio" name="minutos" value="45"> 45min
+			</div>
+
+			<div class="field">
+				<label>Foto del plato (opcional)</label>
+				<div id="output"></div>
+				<input type="file" name="foto" id="foto" accept="image/jpeg, image/png, image/jpg">
+			</div>
+			
 			<input type="submit" name="enviar" value="Enviar">
 		</fieldset>
 	</form>
+
+	<script type="text/javascript">
+		// https://medium.com/@miguelznunez/how-to-upload-and-preview-an-image-with-javascript-749b92711b91
+		let input = document.getElementById("foto");
+		let output = document.getElementById("output")
+		let image;
+
+		input.addEventListener("change", () => {
+			image = input.files[0];
+			displayImage();
+		});
+
+		function displayImage() {
+			output.innerHTML = `<div class="image">
+			<img src="${URL.createObjectURL(image)}" alt="image">
+			</div>`;
+		}
+	</script>
+	<a href="index.html">Atras</a>
 </body>
 </html>

@@ -6,13 +6,27 @@
 	<meta name="keywords" content="HTML, CSS, JavaScript">
 	<meta name="author" content="La Dani Wapa">
 	<link rel="stylesheet" href="./miestilo.css">
-	<title>La Dani Wapa</title>
+	<title>Ejercicios Daniela</title>
 </head>
-<body">
-	<h1">Ejercicios de Daniela Diaz</h1>
+<body>
+	<h1>Ejercicios de Daniela Diaz</h1>
 	<h3>1º DAM. IES Nervión. Curso 2023-2024</h3>
 
-	<a href="./Ej1.html">Ejercicio 1 - Elementos de formatos de parrafo</a>
+	<ul id="ejercicios">
 
+	</ul>
+
+	<a href=""></a>
+
+	<script type="text/javascript">
+		ejercicios = document.getElementById("ejercicios");
+		let html = "";
+
+		for (let i = 1; i <= 7; i++) {
+			html += `<li><a href="Ej${i}.html"><h5>Ejercicio ${i}</h5></a></li>`
+		}
+
+		ejercicios.innerHTML = html;
+	</script>
 </body>
 </html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+	<meta charset="utf-8">
+	<meta author="Daniela">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ejercicio 6 - Daniela</title>
+
+	<style type="text/css">
+		body {
+			font-family: Verdana, sans-serif;
+			padding: 10px;
+			background-color: #acf;
+		}
+		div.flex{
+			display: flex;
+			gap: 20px;
+			align-items:center;
+		}
+		div.fb {
+			display: flex-box;
+			background-color: #79f;
+			padding: 10px;
+			border-radius: 10px;
+		}
+		div.wrapper {
+			background-color: #79f;
+			width: 200px;
+			padding: 10px;
+			border-radius: 10px;
+		}
+		p {
+			margin: 0;
+			font-size: 1.2rem;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="flex">
+		<div class="fb">
+			<h1>Czardas de Vittorio Monti</h1>
+			<h3>Para violín y orquesta</h3>
+			<audio controls src="music.mp3">
+				Tu novagador no soporta el audio :(
+			</audio>
+		</div>
+
+		<div class="fb wrapper">
+			<p><b>Performed by</b></p>
+			<p>Lakatos</p>
+			<br>
+			<p><b>Written by</b></p>
+			<p>Vittorio Monti</p>
+			<br>
+			<p><b>Produced by</b></p>
+			<p>Francis Gavet</p>
+		</div>
+
+		<div class="fp" style="flex-grow: 1;">
+			<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1k8q0uKc3m9uX35XgHhLGI?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+		</div>
+	</div>
+	<a href="index.html">Atras</a>
+</body>
+</html>
