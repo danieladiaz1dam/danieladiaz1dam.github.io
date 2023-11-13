@@ -1,13 +1,12 @@
 body {
 	background-color: #eeaae0;
-	font-size: 2rem;
+	font-size: 2em;
+	line-height: 1em;
 	font-family: Verdana, sans-serif;
 }
 
-h1, h3, a {
-	line-height: 1rem;
-}
-
-h5 {
+ul *, h4 {
 	margin: 0;
+	line-height: 1em;
+	width: fit-content;
 }

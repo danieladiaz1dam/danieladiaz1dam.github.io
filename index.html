@@ -12,21 +12,31 @@
 	<h1>Ejercicios de Daniela Diaz</h1>
 	<h3>1º DAM. IES Nervión. Curso 2023-2024</h3>
 
-	<ul id="ejercicios">
+	<h4>HTML</h4>
+	<ul id="ejercicioshtml"></ul>
 
-	</ul>
+	<h4>CSS</h4>
+	<ul id="ejercicioscss"></ul>
 
 	<a href=""></a>
 
 	<script type="text/javascript">
-		ejercicios = document.getElementById("ejercicios");
 		let html = "";
 
-		for (let i = 1; i <= 8; i++) {
-			html += `<li><a href="Ej${i}.html"><h5>Ejercicio ${i}</h5></a></li>`
+		// HTML
+		for (let i = 1; i <= 9; i++) {
+			html += `<li><a href="HTML/Ej${i}.html"><h5>Ejercicio ${i}</h5></a></li>`
 		}
 
-		ejercicios.innerHTML = html;
+		document.getElementById("ejercicioshtml").innerHTML = html;
+
+		// CSS
+		html = "";
+		for (let i = 1; i <= 1; i++) {
+			html += `<li><a href="CSS/Ej${i}.html"><h5>Ejercicio ${i}</h5></a></li>`
+		}
+
+		document.getElementById("ejercicioscss").innerHTML = html;
 	</script>
 </body>
 </html>

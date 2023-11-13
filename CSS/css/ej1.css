@@ -1,0 +1,46 @@
+.p1 {
+	text-align: right;
+	text-decoration: italic;
+}
+
+.p2 {
+	text-transform: uppercase;
+	text-decoration: line-through;
+}
+
+.p3 {
+	font-family: monospace;
+	font-size: 1.2em;
+}
+
+.p4 {
+	font-weight: bold;
+	text-shadow: -3px 3px 3px green;
+}
+
+div {
+	width: 400px;
+	height: 200px;
+	border-radius: 20px;
+	display: inline-block;
+}
+
+div.buscadores {
+	background-color: royalblue;
+}
+
+div.buscadores a {
+	width: 100px;
+	height: 50px;
+	color: white;
+}
+
+div.buscadores a:nth-child(2) {
+	background-color: red;
+}
+div.buscadores a:nth-child(3) {
+	background-color: blue;
+}
+div.buscadores a:nth-child(4) {
+	background-color: green;
+}
