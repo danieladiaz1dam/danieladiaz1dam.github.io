@@ -5,8 +5,40 @@
 	<meta author="Daniela">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Ejercicio 2 - Daniela</title>
+
+	<style type="text/css">
+		ol, ul {
+			font-size: 1.2em;
+			font-weight: bold;
+		}
+
+		ul {
+			background-color: darkgreen;
+			color: white;
+		}
+
+		/*
+		ol li {
+			color: darkviolet;
+		}
+
+		ol li:nth-child(even) {
+			color: violet;
+		}
+
+		
+
+		ul li {
+			color: yellow;
+		}
+
+		ul li:nth-child(odd) {
+			color: darkorange;
+		}
+		*/
+	</style>
 </head>
-<body>
+<body style="background: #abf; font-family:  Courier, 'Lucida Console', monospace;">
 	<ol>
 		<li>Primer elemento</li>
 		<li>Segundo elemento</li>
@@ -53,6 +85,58 @@
 		<li>Tercer elemento</li>
 	</ul>
 
-	<a href="index.html">Atras</a>
+	<a style="font-weight: bold;" href="index.html">Atras</a>
+
+	<script type="text/javascript">
+		// Devuelve nodos, no un array
+		let ol = document.getElementsByTagName("ol");
+		let ul = document.getElementsByTagName("ul");
+		let li;
+		let change = true;
+
+		function blink() {
+			setTimeout(() => {
+				// little fix para usar lista de nodos como array
+				Array.prototype.forEach.call(ol, (k) => {
+					Array.prototype.forEach.call(k.children, (c, i) => {
+						if (change) {
+							if (i % 2 == 0)
+								c.style.color = "darkviolet";
+							else
+								c.style.color = "violet";
+						} else {
+							if (i % 2 == 0)
+								c.style.color = "violet";
+							else
+								c.style.color = "darkviolet";
+						}
+						
+					});
+				});
+
+				Array.prototype.forEach.call(ul, (k) => {
+					Array.prototype.forEach.call(k.children, (c, i) => {
+						if (change) {
+							if (i % 2 == 0)
+								c.style.color = "darkorange";
+							else
+								c.style.color = "yellow";
+						} else {
+							if (i % 2 == 0)
+								c.style.color = "yellow";
+							else
+								c.style.color = "darkorange";
+						};
+					});
+				});
+
+				change = !change;
+
+				blink();
+			}, 800);
+		}
+		blink();
+	</script>
+
 </body>
 </html>
