@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es-ES">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="Description" content="Pagina de prueba">
@@ -8,15 +9,20 @@
 	<link rel="stylesheet" href="./miestilo.css">
 	<title>Ejercicios Daniela</title>
 </head>
+
 <body>
 	<h1>Ejercicios de Daniela Diaz</h1>
 	<h3>1º DAM. IES Nervión. Curso 2023-2024</h3>
 
-	<h4>HTML</h4>
-	<ul id="ejercicioshtml"></ul>
+	<div class="tc">
+		<h4>HTML</h4>
+		<ul id="ejercicioshtml"></ul>
+	</div>
 
-	<h4>CSS</h4>
-	<ul id="ejercicioscss"></ul>
+	<div class="tc">
+		<h4>CSS</h4>
+		<ul id="ejercicioscss"></ul>
+	</div>
 
 	<a href=""></a>
 
@@ -32,11 +38,12 @@
 
 		// CSS
 		html = "";
-		for (let i = 1; i <= 1; i++) {
+		for (let i = 1; i <= 4; i++) {
 			html += `<li><a href="CSS/Ej${i}.html"><h5>Ejercicio ${i}</h5></a></li>`
 		}
 
 		document.getElementById("ejercicioscss").innerHTML = html;
 	</script>
 </body>
+
 </html>

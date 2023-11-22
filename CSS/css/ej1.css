@@ -18,11 +18,28 @@
 	text-shadow: -3px 3px 3px green;
 }
 
+a {
+	width: 100px;
+	height: 50px;
+	color: white;
+}
+
+div:not(:last-child) > a:nth-child(2) {
+	background-color: red;
+}
+div:not(:last-child) > a:nth-child(3) {
+	background-color: blue;
+}
+div:not(:last-child) > a:nth-child(4) {
+	background-color: green;
+}
+
 div {
+	padding: 40px 20px;
 	width: 400px;
 	height: 200px;
 	border-radius: 20px;
-	display: inline-block;
+	display: table-cell;
 }
 
 div.buscadores {
@@ -30,17 +47,24 @@ div.buscadores {
 }
 
 div.buscadores a {
-	width: 100px;
-	height: 50px;
-	color: white;
+	display: table-cell;
 }
 
-div.buscadores a:nth-child(2) {
-	background-color: red;
+div.redes {
+	background-color: lightseagreen;
 }
-div.buscadores a:nth-child(3) {
-	background-color: blue;
+
+div.redes a {
+	display: block;
 }
-div.buscadores a:nth-child(4) {
-	background-color: green;
+
+div.noticias {
+	background-color: #ff00f085;
+}
+
+div.noticias {
+	background-image: url("../imgs/img.png");
+	background-position: bottom right;
+	background-size: 250px;
+	background-repeat: no-repeat;
 }

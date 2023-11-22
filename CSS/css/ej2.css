@@ -1,0 +1,26 @@
+div {
+	height: 300px;
+	width: 300px;
+	border-radius: 2px;
+	background-image: url("../imgs/honey.jpg");
+	background-size: 100px;
+	display: table-cell;
+}
+
+div#d1 {
+	border: red solid 3px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+div#d2 {
+	border: blue solid 3px;
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+
+div#d3 {
+	border: green solid 3px;
+	background-repeat: repeat-y;
+	background-position: right;
+}

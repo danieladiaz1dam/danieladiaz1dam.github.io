@@ -10,3 +10,8 @@ ul *, h4 {
 	line-height: 1em;
 	width: fit-content;
 }
+
+div.tc {
+	display: table-cell;
+	padding-left: 20px;
+}

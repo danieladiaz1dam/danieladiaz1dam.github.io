@@ -1,0 +1,16 @@
+div.wrapper {
+    border: 1px solid black;
+    background-color: lightblue;
+    max-width: 500px;
+    margin: 20px;
+    padding: 10px;
+}
+
+div.wrapper div {
+    float: left;
+    height: 50px;
+    width: 50px;
+    margin: 20px 20px 20px 0px;
+    box-sizing: border-box;
+    background-color: lightgreen;
+}

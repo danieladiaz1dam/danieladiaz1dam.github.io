@@ -1,0 +1,63 @@
+hr {
+    margin: 50px 0;
+}
+
+/* tabla 2 */
+
+#t2 {
+    table-layout: fixed;
+    border: 1px solid black;
+    align-self: center;
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+
+#t2 tr {
+    width: auto;
+}
+
+#t2 td {
+    border: 1px solid black;
+    padding: 10px;
+    width: 25%;
+}
+
+/* tabla 3 */
+
+#t3 {
+    border: 1px solid black;
+    align-self: center;
+    display: table;
+    width: 50%;
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 1px;
+}
+
+#t3 .tr {
+    display: block;
+}
+
+#t3 .td {
+    border: 1px solid black;
+    padding: 10px;
+    width: 25%;
+    display: table-cell;
+}
+
+/* tabla 4 */
+
+#t4 {
+    display: grid;
+    width: 50%;
+    margin: auto;
+    grid-template-columns: auto auto auto;
+    border: solid black 1px;
+}
+
+#t4 .td {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 2px;
+}
