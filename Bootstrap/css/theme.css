@@ -64,6 +64,15 @@ h4 {
     font-family: 'Visby Bold';
 }
 
+img {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
 .w-65 {
     width: 65% !important;
 }
@@ -98,7 +107,7 @@ ul.custom-icon li span:first-child i {
     --bs-btn-hover-color: #fff;
     --bs-btn-hover-bg: var(--c6);
     --bs-btn-hover-border-color: var(--c6);
-    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
     --bs-btn-active-color: #fff;
     --bs-btn-active-bg: var(--c6);
     --bs-btn-active-border-color: var(--c6);
@@ -109,7 +118,9 @@ ul.custom-icon li span:first-child i {
 
 }
 
-.btn-primary:hover, .btn-primary:checked, .btn-primary:active {
+.btn-primary:hover,
+.btn-primary:checked,
+.btn-primary:active {
     background-color: var(--c6) !important;
     border: 1px solid var(--c6) !important;
 }
@@ -151,7 +162,8 @@ section {
     margin-bottom: 150px;
 }
 
-.borderb, .border {
+.borderb,
+.border {
     border: 1px solid black;
 }
 
