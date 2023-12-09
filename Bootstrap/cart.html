@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <title>Cart</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light my-bg sticky-top semibold"> <!-- bg-light -->
+        <a href="index.html" class="container-fluid justify-content-start">
+            <img id="logo" src="imgs/logo_circle_nobg.png" alt="logo">
+            <h2>LaDaniDogCare</h2>
+        </a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a href="index.html" class="nav-link"><span><i class="fa-solid fa-paw"></i></span><span>
+                            Home</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="puppies.html" class="nav-link"><span><i class="fa-solid fa-paw"></i></span><span>
+                            Puppies</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link"><span><i class="fa-solid fa-paw"></i></span><span>
+                            About</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="shop.html" class="nav-link"><span><i class="fa-solid fa-paw"></i></span><span>
+                            Shop</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link"><span><i class="fa-solid fa-paw"></i></span><span>
+                            Contact</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="cart.html" class="nav-link active">
+                        <span><i class="fa-solid fa-cart-shopping"></i></span>
+                        <span> Cart</span>
+                        <span class="badge rounded-pill bg-danger">1</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="cart">
+        <div class="container-fluid px-5">
+            <div class="col">
+                <div class="row mb-3">
+                    <h1>Shopping Cart</h1>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="row bg-eee py-3 px-2 mb-5 rounded-5">
+                            <div class="col-md-2">
+                                <div class="cropped rounded-5 float-start">
+                                    <img src="imgs/shop/products/junior/Comida-Junior-3.jpg" alt="Comida Junior #3"
+                                        width="250" height="250">
+                                </div>
+                            </div>
+                            <div class="col-md-10 text-start">
+                                <h3>Comida Junior #3</h3>
+                                <div class="">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <h4>$5.50</h4>
+                                <div class="input-group mt-5" style="width: max-content;">
+                                    <button class="input-group-text">&minus;</button>
+                                    <input type="number" class="form-control" value="1" min="1" max="100">
+                                    <span class="input-group-text">&plus;</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row bg-eee py-3 px-2 mb-5 rounded-5">
+                            <div class="col-md-2">
+                                <div class="cropped rounded-5 float-start">
+                                    <img src="imgs/shop/products/senior/Comida-Senior-4.jpg" alt="Comida Senior #4"
+                                        width="250" height="250">
+                                </div>
+                            </div>
+                            <div class="col-md-10 text-start">
+                                <h3>Comida Senior #4</h3>
+                                <div class="">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <h4>$5.50</h4>
+                                <div class="input-group mt-5" style="width: max-content;">
+                                    <button class="input-group-text">&minus;</button>
+                                    <input type="number" class="form-control" value="3" min="1" max="100">
+                                    <span class="input-group-text">&plus;</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row bg-eee py-3 px-2 rounded-5">
+                            <div class="col-md-2">
+                                <div class="cropped rounded-5 float-start">
+                                    <img src="imgs/shop/products/senior/Comida-Senior-6.jpg" alt="Comida Senior #6"
+                                        width="250" height="250">
+                                </div>
+                            </div>
+                            <div class="col-md-10 text-start">
+                                <h3>Comida Senior #6</h3>
+                                <div class="">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <h4>$5.50</h4>
+                                <div class="input-group mt-5" style="width: max-content;">
+                                    <button class="input-group-text">&minus;</button>
+                                    <input type="number" class="form-control" value="2" min="1" max="100">
+                                    <span class="input-group-text">&plus;</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 px-4">
+                        <div class="bg-eee rounded-5 p-4">
+                            <h2>Subtotal: $33.00</h2>
+                            <span class="d-flex flex-row justify-content-between mt-4">
+                                <h4 class="text-start">Product Total</h4>
+                                <h4 class="text-end">$33.00</h4>
+                            </span>
+                            <span class="d-flex flex-row justify-content-between">
+                                <h4 class="text-start">Shipping costs</h4>
+                                <h4 class="text-end">$5.00</h4>
+                            </span>
+                            <span class="d-flex flex-row justify-content-between">
+                                <h4 class="text-start">Discount</h4>
+                                <h4 class="text-end discount">- $5.00</h4>
+                            </span>
+                            <hr class="my-4">
+                            <span class="d-flex flex-row justify-content-between">
+                                <h4 class="text-start">Total</h4>
+                                <h3 class="text-end">$33.00</h3>
+                            </span>
+                            <a href="#" class="btn btn-primary">Proceed to checkout</a>
+                        </div>
+                        <div class="bg-eee rounded-5 p-4 mt-3">
+                            <h2>Available Payment Methods</h2>
+                            <div class="d-flex flex-row flex-wrap">
+                                <img class="payment-method" src="imgs/payment/p1.webp" alt="payment method">
+                                <img class="payment-method" src="imgs/payment/p2.webp" alt="payment method">
+                                <img class="payment-method" src="imgs/payment/p3.webp" alt="payment method">
+                                <img class="payment-method" src="imgs/payment/p4.webp" alt="payment method">
+                                <img class="payment-method" src="imgs/payment/p5.webp" alt="payment method">
+                                <img class="payment-method" src="imgs/payment/p6.webp" alt="payment method">
+                                <img class="payment-method" src="imgs/payment/p7.webp" alt="payment method">
+                                <img class="payment-method" src="imgs/payment/p8.webp" alt="payment method">
+                                <img class="payment-method" src="imgs/payment/p9.webp" alt="payment method">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/1805b3e6a8.js" crossorigin="anonymous"></script>
+
+
+
+</html>

@@ -1,0 +1,12 @@
+#aboutus p,
+#aboutus span {
+    font-size: 1.3rem;
+    margin: 30px 0;
+}
+
+#services img {
+    border-radius: 30%;
+    border: var(--c3) solid 15px;
+    background-color: var(--c3);
+    width: 65%;
+}

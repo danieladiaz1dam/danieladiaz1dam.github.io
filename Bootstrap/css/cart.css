@@ -1,0 +1,11 @@
+#cart {
+    margin: 0;
+}
+.payment-method {
+    scale: .75;
+}
+
+.discount {
+    color: var(--c4);
+}
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/puppies.css">
+    <title>Puppies</title>
+</head>
+
+<script src="js/puppies.js"></script>
+
+<body onload="addPuppies()">
+    <nav class="navbar navbar-expand-lg navbar-light my-bg sticky-top semibold"> <!-- bg-light -->
+        <a href="index.html" class="container-fluid justify-content-start">
+            <img id="logo" src="imgs/logo_circle_nobg.png" alt="logo">
+            <h2>LaDaniDogCare</h2>
+        </a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a href="index.html" class="nav-link"><span><i class="fa-solid fa-paw"></i></span><span>
+                            Home</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="puppies.html" class="nav-link active"><span><i class="fa-solid fa-paw"></i></span><span>
+                            Puppies</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link"><span><i class="fa-solid fa-paw"></i></span><span>
+                            About</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="shop.html" class="nav-link"><span><i class="fa-solid fa-paw"></i></span><span>
+                            Shop</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link"><span><i class="fa-solid fa-paw"></i></span><span>
+                            Contact</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="cart.html" class="nav-link">
+                        <span><i class="fa-solid fa-cart-shopping"></i></span>
+                        <span> Cart</span>
+                        <span class="badge rounded-pill bg-danger">1</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="puppies">
+        <div class="container-fluid">
+            <div class="row text-center mt-3 mb-5">
+                <h1>Puppies waiting for you</h1>
+            </div>
+             <div class="row d-flex flex-wrap" id="puppy-goes-here">
+              <!-- <div class="col-md-3 mb-5 d-flex justify-content-center">
+                    <div class="card rounded-3 w-75 regular">
+                        <img src="imgs/puppies/dog1.jpg" class="card-img-top" alt="dog1">
+                        <div class="card-body position-relative">
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill my-badge-bg fs-6">1
+                                yr</span>
+                            <h4 class="bold">Charlie</h4>
+                            <p><span class="semibold">Size: </span> small</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, quod!</p>
+                            <a href="contact.html" class="btn btn-primary">Adopt!</a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <button onclick="addPuppies()" id="my-btn" class="btn btn-outline-primary mt-5">Load More</button>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-light text-center py-3">
+        <div class="container">
+            <p>&copy; 2023 by La Dani Wapa. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/1805b3e6a8.js" crossorigin="anonymous"></script>
+
+</html>

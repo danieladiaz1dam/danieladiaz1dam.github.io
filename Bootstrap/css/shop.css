@@ -1,0 +1,30 @@
+#shop-header {
+    background-image: url('../imgs/shop/bg.jpg');
+    background-size: cover;
+    height: 60vh;
+    background-position: center;
+    padding: 0;
+}
+
+.filter {
+    background-color: #3C2F20;
+    opacity: .8;
+    margin: 0;
+    width: 100%;
+}
+
+#shop-header h1 {
+    font-size: 4.5rem;
+}
+
+section {
+    margin: 0;
+}
+
+#shop {
+    padding: 0 25px;
+}
+
+#search {
+    background-color: var(--c450);
+}
