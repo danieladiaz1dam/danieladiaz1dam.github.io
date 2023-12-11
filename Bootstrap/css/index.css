@@ -1,7 +1,7 @@
 #first-bg {
     background-image: url('../imgs/index/bg1.jpg');
     background-size: cover;
-    height: 80vh;
+    height: fit-content;
 }
 
 #first-bg h1 {
