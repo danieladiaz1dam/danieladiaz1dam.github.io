@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+    <title>Home Ejercicios- Daniela</title>
+    <link>http://localhost:5500</link>
+
+    <entry>
+        <title>The Best Golden Globes Dresses of All Time</title>
+        <link>https://www.vogue.com/slideshow/best-golden-globes-dresses-all-time</link>
+        <summary>List of best dresses worn at the Best Golden Globes, since it started</summary>
+    </entry>
+    <entry>
+        <title>Counter-Strike 2</title>
+        <link>https://store.steampowered.com/app/730/CounterStrike_2/</link>
+        <summary>Counter-Strike 2, marked as the best free to play game in steam</summary>
+    </entry>
+    <entry>
+        <title>2+2=5</title>
+        <link>https://www.bbc.com/mundo/articles/ckv48eyl15eo</link>
+        <summary>Some mathematics are making this add operation</summary>
+    </entry>
+</feed>

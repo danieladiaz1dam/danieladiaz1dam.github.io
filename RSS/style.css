@@ -1,0 +1,19 @@
+img {
+    display: block;
+    margin: auto;
+    width: 75%;
+}
+
+div.full-width {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+div.fb {
+    display: flexbox;
+    margin: 0 15px;
+}
